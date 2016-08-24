@@ -39,14 +39,15 @@ header {
     flex-direction: row; }
     header .searchbox label {
       background: white;
-      color: black;
+      color: gray;
       padding: 2px 8px; }
     header .searchbox input[type="search"] {
       flex: 1;
-      padding: 0px;
+      padding: 0px 6px;
       margin: 0px;
       border: none;
-      font-size: inherit; }
+      font-size: inherit;
+      -webkit-appearance: none; }
     header .searchbox input:focus {
       outline: none; }
   header button#navButton {
