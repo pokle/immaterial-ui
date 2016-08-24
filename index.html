@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>immaterial ui</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<div class="page">
+  <header>
+    <button id="navButton" onclick="toggleSideNav()">☰</button>
+    <span>immaterial&nbsp;ui</span>
+    <div class="searchbox">
+      <label for="search">&sfr;</label>
+      <input id="search" type="search"/>
+    </div>
+    <span class="right"><a href="#">Logout</a></span>
+  </header>
+  <div style="display: flex; flex-direction: row;">
+    <nav style="display: none;" id="sideNav">Peek a boo</nav>
+    <article>
+      <h1>Hi!</h1> 
+      <div class="box">
+      Welcome to the immaterial ui. An attempt to learn flexbox layout, and mimic google material ui l&f. jhjhjh
+      </div>
+      <div class="box">
+      Lorem ipsum dorem boo.
+      </div>
+    </article>
+  </div>
+</div>
+
+<style>
+
+</style>
+
+
+<script>
+
+var header = document.getElementsByTagName('header')[0];
+var search = document.getElementById('search')
+
+search.addEventListener('focus', (e)=>header.style='background: #eee; color: black;')
+search.addEventListener('blur', (e)=>header.style='background: #4285f4; color: white;')
+
+//
+var sideNav = document.getElementById('sideNav');
+
+function toggleSideNav() {
+  if (sideNav.style.display == "none") {
+    sideNav.style.display = 'block';
+  } else {
+    sideNav.style.display = 'none';
+  }
+}
+
+</script>
