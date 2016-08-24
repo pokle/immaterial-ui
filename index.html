@@ -5,23 +5,34 @@
   <meta charset="UTF-8">
   <title>immaterial ui</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animate.css">
 </head>
 
 <body>
   <script src="script.js"></script>
 
-  <div class="page">
-    <header>
-      <button id="navButton" onclick="toggleSideNav()">☰</button>
-      <span>immaterial&nbsp;ui</span>
-      <div class="searchbox">
-        <label for="search">search</label>
-        <input id="search" type="search" />
-      </div>
-      <span class="right"><a href="#">Logout</a></span>
-    </header>
-    <div style="display: flex; flex-direction: row;">
-      <nav style="display: none;" id="sideNav">Peek a boo</nav>
+  <div class="sideNavWrapper">
+
+    <nav class="animated fadeIn" style="display: none;" id="sideNav">
+      <header>
+        <span>Menu</span>
+      </header>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Peek a boo</a></li>
+      </ul>
+    </nav>
+
+    <div class="page">
+      <header>
+        <button id="navButton" onclick="toggleSideNav()">☰</button>
+        <span>immaterial&nbsp;ui</span>
+        <div class="searchbox">
+          <label for="search">search</label>
+          <input id="search" type="search" />
+        </div>
+        <span class="right"><a href="#">Logout</a></span>
+      </header>
       <article>
         <h1>Hi!</h1>
         <div class="box">
@@ -32,6 +43,7 @@
         </div>
       </article>
     </div>
+
   </div>
 
 </body>

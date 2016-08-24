@@ -12,7 +12,7 @@ document.addEventListener('ready', function () {
 function toggleSideNav() {
     var sideNav = document.getElementById('sideNav');
     if (sideNav.style.display == "none") {
-        sideNav.style.display = 'block';
+        sideNav.style.display = 'flex';
     } else {
         sideNav.style.display = 'none';
     }
